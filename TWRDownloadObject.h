@@ -11,7 +11,7 @@
 
 typedef void(^TWRDownloadRemainingTimeBlock)(NSUInteger seconds);
 typedef void(^TWRDownloadProgressBlock)(CGFloat progress);
-typedef void(^TWRDownloadCompletionBlock)(BOOL completed);
+typedef void(^TWRDownloadCompletionBlock)(BOOL completed, NSError *error, NSString *mimeType);
 
 @interface TWRDownloadObject : NSObject
 
